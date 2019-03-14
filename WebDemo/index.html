@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>看看你的心情？</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.io/min/jquery.blockUI.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="https://unpkg.com/keras-js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/md5-js@0.0.3/md5.js"></script>
+    <script type="text/javascript" src="predict.js"></script>
+</head>
+<body>
+
+<div style="padding: 100px 100px 10px;">
+    <div> 
+        <textarea class="inputTextarea noBlue" placeholder="写一两句话看看？" maxlength="50" rows="3" id="text_input" 
+        style="font-size: 18px;
+        padding: 20px;
+        line-height: 27px;
+        width: 100%;
+        height: 280px;
+        border: #50aca1 3px solid;
+        overflow: auto;
+        letter-spacing: 2px;
+        resize: none;
+        "></textarea> 
+    </div>
+    </br> 
+    <div class="show-img">
+        <div class="circle" style="text-align: center;">
+            <img src="faceEmotion/normal.png" style="margin: 0 auto;" id="face"> 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

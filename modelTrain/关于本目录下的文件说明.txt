@@ -1,0 +1,16 @@
+此目录下的文件是训练模型时所编写的代码和数据。
+
+1.	balanced-dataset.jsonl是所使用的数据集
+2.	word_index.json是单词索引表
+3.	Sentiment_Analyze_Model_1_8.h5是之前训练的一个模型
+4.	MyClassify.py是模型训练脚本（需要keras，使用tensorflow作为backend），直接运行即可，训练完成后模型会以.h5保存
+5.	Test.py是测试某个句子的一个脚本，可以在其中输入任意句子来对模型进行测试
+
+若要将模型放到javascript中使用（Web Demo），则需要用tensorflowjs工具将模型转换格式
+（
+安装了tensorflowjs包后，可使用
+
+python encoder.py -q Sentiment_Analyze_Model_1_3.h5
+		  ———————————————
+		              对应的模型文件名
+）
