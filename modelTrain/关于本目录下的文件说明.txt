@@ -6,9 +6,9 @@
 4.	MyClassify.py是模型训练脚本（需要keras，使用tensorflow作为backend），直接运行即可，训练完成后模型会以.h5保存
 5.	Test.py是测试某个句子的一个脚本，可以在其中输入任意句子来对模型进行测试
 
-若要将模型放到javascript中使用（Web Demo），则需要用tensorflowjs工具将模型转换格式
+若要将模型放到javascript中使用（Web Demo），则需要用kerasjs提供的工具将模型转换格式
 （
-安装了tensorflowjs包后，可使用
+使用https://github.com/transcranial/keras-js/blob/master/python/encoder.py提供的脚本，以下命令可将模型格式转为kerasjs能使用的格式
 
 python encoder.py -q Sentiment_Analyze_Model_1_3.h5
 		  ———————————————
